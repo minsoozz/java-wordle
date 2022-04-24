@@ -24,7 +24,7 @@ public class UserInputImpl implements UserInput {
             Scanner sc = new Scanner(System.in);
             String userInput = sc.next();
             sc.close();
-            return UserWord.of(userInput);
+            return new UserWord(userInput);
         } catch(Exception e) {
             e.printStackTrace();
             throw e;
