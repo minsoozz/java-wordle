@@ -29,5 +29,6 @@ public class WordleApplication {
         GameManager gameManager = new GameManagerImpl(userInput, wordGenerator, judgement, judgeResultPrinter,
                 messagePrinter);
         return gameManager;
+
     }
 }
